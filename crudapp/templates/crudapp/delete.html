@@ -1,0 +1,17 @@
+<!-- crudapp/templates/crudapp/delete.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Key-Value Pair</title>
+</head>
+<body>
+    <h1>Delete Key-Value Pair</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="key">Key:</label>
+        <input type="text" name="key" required><br>
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>

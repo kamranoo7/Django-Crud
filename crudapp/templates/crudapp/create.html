@@ -1,0 +1,20 @@
+<!-- crudapp/templates/crudapp/create.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Key-Value Pair</title>
+</head>
+<body>
+    <h1>Create Key-Value Pair</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="key">Key:</label>
+        <input type="text" name="key" required><br>
+        <label for="value">Value:</label>
+        <input type="text" name="value" required><br>
+      
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>

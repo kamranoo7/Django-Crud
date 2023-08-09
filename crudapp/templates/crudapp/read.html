@@ -1,0 +1,20 @@
+<!-- crudapp/templates/crudapp/read.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Data</title>
+</head>
+<body>
+    <h1>Data in Dictionary</h1>
+    {% if data_dict %}
+        <ul>
+            {% for key, value in data_dict.items %}
+                <li>{{ key }} : {{ value }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No data in the dictionary.</p>
+    {% endif %}
+</body>
+</html>
